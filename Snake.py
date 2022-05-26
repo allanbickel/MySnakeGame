@@ -1,5 +1,5 @@
 import pygame as pg
-import random as rd
+from random import randint
 from pygame.math import Vector2
 import os
 
@@ -85,7 +85,7 @@ class Fruit:
         self.game.WINDOW.blit(fruit_image, (fruit_rect.x, fruit_rect.y))
 
     def randomize(self):
-        self.x = rd.randint(0, int(600 / block_size) - 1)
-        self.y = rd.randint(0, int(600 / block_size) - 1)
+        self.x = randint(0, int(600 / block_size) - 1)
+        self.y = randint(0, int(600 / block_size) - 1)
 
         self.pos = Vector2(self.x, self.y)
