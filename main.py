@@ -172,9 +172,3 @@ class Game:
 game = Game()
 if __name__ == '__main__':
     game.main()
-
-# carregar sons
-# adcionar tela de iniciar e game over
-
-# BUGS:
-# cobra deveria congelar no game over
