@@ -1,7 +1,7 @@
 import pygame as pg
-import os
 import random as rd
 from pygame.math import Vector2
+import os
 
 EAT = pg.USEREVENT + 1
 GAME_OVER = pg.USEREVENT + 3
