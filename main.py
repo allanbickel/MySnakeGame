@@ -122,11 +122,7 @@ class Game:
                 self.WINDOW.blit(grass_image, (x, y))
 
     def display_text(self, text, size, color, x, y):
-        # try:
-        #     font = pg.font.Font('Quinquefive-0Wonv.ttf', size)
-        # except FileNotFoundError:
-        font = pg.font.Font(os.path.join('Assets', 'Quinquefive-0Wonv.ttf'), size)
-
+        font = pg.font.Font('Quinquefive-0Wonv.ttf', size)
         text_surf = font.render(text, True, color)
         text_rect = text_surf.get_rect()
         text_rect.center = (x, y)
