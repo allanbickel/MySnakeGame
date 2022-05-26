@@ -1,4 +1,3 @@
-# import pygame as pg
 from Snake import *
 
 pg.init()
